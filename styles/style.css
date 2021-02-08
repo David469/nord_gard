@@ -18,6 +18,10 @@ body{
 	color: white;
 }
 
+.js-hidden {
+	display: none !important;
+}
+
 
 /*----ADMIN-CONTROL----*/
 .admin-control{
@@ -978,17 +982,6 @@ footer .navigation p span{
 
 .btn_width{
 	width: 100%;
-}
-
-.btn_no-border{
-}
-
-
-/*ADMIN*/
-.admin-form form{
-}
-
-.admin-form__btn{
 }
 
 

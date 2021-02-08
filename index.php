@@ -19,11 +19,11 @@ session_start();
 				</div>
 				<nav id="nav">
 					<ul>
-						<li class="nav-item"><a href="#">О поселке</a></li>
-						<li class="nav-item"><a href="#">Фото</a></li>
-						<li class="nav-item"><a href="#">Условия</a></li>
-						<li class="nav-item"><a href="#">Цены</a></li>
-						<li class="nav-item"><a href="#">Контакты</a></li>
+						<li class="nav-item"><a href="#about_nord_gard">О поселке</a></li>
+						<li class="nav-item"><a href="#photos">Фото</a></li>
+						<li class="nav-item"><a href="#terms">Условия</a></li>
+						<li class="nav-item"><a href="#prices">Цены</a></li>
+						<li class="nav-item"><a href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
 				<button id="modalCallBtn" class="btn btn-yellow">Заказать звонок</button>
@@ -57,7 +57,7 @@ session_start();
 		</div>
 	</header>
 	<main id="main">
-		<div class="back-gray head">
+		<div class="back-gray head" id="about_nord_gard">
 			<div class="container">
 				<img src="images/tree_1.png" alt="" class="decoration">
 				<div class="about">
@@ -88,7 +88,7 @@ session_start();
 			</div> -->
 		</div>
 		<div class="container">
-			<div class="offers">
+			<div class="offers"  id="prices">
 				<div class="text">
 					<h2 class="title">Наши <span>предложения</span></h2>
 					<button class="btn btn-black">Открыть генплан</button>
@@ -115,7 +115,6 @@ session_start();
 							?>
 							<script>
 								pluses.push(JSON.parse('<?php echo $pluses; ?>'));
-								console.log(pluses);
 							</script>
 							<button class="btn btn-gray btn_no-border" onclick="modalBtn(
 								'<?php echo $key ?>', 
@@ -132,8 +131,8 @@ session_start();
 					<?php } ?>
 				</div>
 				<div class="refresh">
-					<button class="btn btn-gray btn-icon btn-refresh">
-						<img src="icons/refresh.png" alt="">
+					<button class="btn btn-gray btn-icon btn-refresh" onclick="showMoreOffers(this)">
+						<img src="icons/refresh.png" alt="" click="">
 						Показать еще  6 участков
 					</button>
 				</div>
@@ -155,7 +154,7 @@ session_start();
 					<img src="images/tree_2.png" alt="">
 				</div>
 			</div>
-			<div class="galery">
+			<div class="galery" id="photos">
 				<div class="container">
 					<h2 class="title">Фотогалерея</h2>
 				</div>
@@ -171,7 +170,7 @@ session_start();
 					<?php }?>
 				</div>
 			</div>
-			<div class="back-gray buy-contact">
+			<div class="back-gray buy-contact" id="terms">
 				<img src="images/tree_3.png" alt="">
 				<div class="container buy">
 					<h2 class="title">Способы <span>покупки</span></h2>
@@ -206,7 +205,7 @@ session_start();
 						</div>
 					</div>
 				</div>
-				<div class="container contact">
+				<div class="container contact" id="contacts">
 					<h2 class="title">Контактная <span>Информация</span></h2>
 					<div>
 						<div>
