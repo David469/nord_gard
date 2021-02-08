@@ -18,3 +18,13 @@ $query = 'SELECT * FROM `news`';
 $result = mysqli_query($conn, $query);
 $all_news = mysqli_fetch_all($result, MYSQLI_ASSOC);
 mysqli_free_result($result);
+
+$query = 'SELECT * FROM `numbers`';
+$result = mysqli_query($conn, $query);
+$numbers = mysqli_fetch_all($result, MYSQLI_ASSOC);
+mysqli_free_result($result);
+
+$query = 'SELECT * FROM `messages`';
+$result = mysqli_query($conn, $query);
+$messages = mysqli_fetch_all($result, MYSQLI_ASSOC);
+mysqli_free_result($result);

@@ -1,0 +1,209 @@
+/*----ADMIN-LOGIN----*/
+.body_center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.admin-form_width{
+	width: 50%;
+	margin: auto;
+}
+
+@media(max-width: 1024px){
+	.admin-form_width{
+		width: auto;
+	}
+}
+
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1172px;
+	margin: 0 auto;
+}
+
+
+/*----ADMIN-PANEL----*/
+.header{
+	background-color: #219653;
+}
+
+.header__nav{
+	padding: 15px 0;
+}
+
+.nav__list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav__list-item{
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.nav__list-item:last-child{
+	margin-right: 0;
+}
+
+.nav__list-link{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transform: 0.2s;
+}
+
+.nav__list-link:hover{
+	color: #E9D731;
+}
+
+.caption{
+}
+
+.caption__title{
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #E9D731;
+}
+
+
+/*----ABOUT----*/
+.about{
+	display: block !important;
+}
+
+
+/*----TABLE----*/
+.table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+}
+
+.table th, .table td{
+	padding: 12px 15px;
+}
+
+.table__buttons button{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.table thead tr{
+	background-color: #219653;
+	color: white;
+	text-align: left;
+	font-weight: bold;
+}
+
+.table__image{
+	text-align: center;
+	max-width: 80px;
+}
+
+.td.table__image{
+	width: 180px;
+}
+
+.table tbody tr{
+	border-bottom: 2px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type{
+	border-bottom: 2px solid #219653;
+}
+
+.table__buttons{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.table__text{
+	overflow: auto;
+	height: 73px;
+}
+
+.table input{
+	width: 100%;
+}
+
+
+/*----OFFERS----*/
+.offers{
+	margin-top: 0 !important;
+}
+
+
+/*----GALERY----*/
+.galery__table img.table__image{
+	max-height: none;
+	height: 100px;
+}
+
+
+/*----PHP----*/
+.js-hidden{
+	display: none !important;
+}
+
+div.table{
+	display: table;
+}
+
+div.thead{
+	display: table-header-group;
+}
+
+div.tbody{
+	display: table-row-group;
+}
+
+form.tr, div.tr{
+	display:table-row;
+}
+
+span.td, span.th{
+	display:table-cell;
+}
+
+
+/*----TABLE-PHP----*/
+.table span.td, .table span.th{
+	padding: 12px 15px;
+}
+
+.table div.thead div.tr{
+	background-color: #219653;
+	color: white;
+	text-align: left;
+	font-weight: bold;
+}
+
+.table div.tbody .tr{
+	border-bottom: 2px solid #dddddd;
+}
+
+.table div.tbody .tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.table__inserted>div.tbody>div.tr:nth-child(2n) {
+	background-color: #f3f3f3;
+}
