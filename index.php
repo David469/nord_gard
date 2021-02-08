@@ -166,7 +166,6 @@ session_start();
 							<div class="over">
 								<!-- <img src="icons/more.png" alt="" onclick="modalGallery()"> -->
 								<img src="icons/+.png" alt="" class="plus" onclick="modalGallery('<?php echo $image['image'] ?>')">
-								<img src="icons/circle.png" alt="" class="circle">
 							</div>
 						</div>
 					<?php }?>
